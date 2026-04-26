@@ -1,0 +1,58 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    /* Adding a themed background */
+    background-image: url('C:\\Users\\Redissh\\Documents\\GitHub\\Panda%20Jump\\assets\\bgBamboo.png'); /* Ensure this file is in your folder */
+    background-size: cover; 
+    background-position: center;
+    background-repeat: no-repeat;
+    font-family: 'Arial', sans-serif;
+}
+
+h1 {
+    font-size: 80px;
+    color: #fff; /* Deep forest green */
+    text-shadow: 3px 3px 0px #2e7d32; /* Makes text pop against backgrounds */
+    margin-bottom: 40px;
+}
+
+.start-button {
+    padding: 20px 50px;
+    font-size: 40px;
+    cursor: pointer;
+    background-color: #4CAF50;
+    color: white;
+    border: 4px solid #2e7d32;
+    border-radius: 50px; /* Rounded pill shape */
+    transition: transform 0.2s, background-color 0.2s;
+}
+
+/* Adds a "pop" when you hover over the button */
+.start-button:hover {
+    background-color: #45a049;
+    transform: scale(1.1);
+}
+
+.help-button {
+    position: absolute; /* Takes it out of the flexbox flow */
+    top: 20px;          /* Distance from the top */
+    right: 20px;        /* Distance from the right */
+    
+    padding: 10px 20px;
+    font-size: 18px;    /* Readable size */
+    cursor: pointer;
+    background-color: #555;
+    color: white;
+    border: 2px solid white;
+    border-radius: 5px;
+    transition: transform 0.2s;
+}
+
+.help-button:hover {
+    background-color: #333;
+    transform: scale(1.1);
+}
